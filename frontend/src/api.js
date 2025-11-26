@@ -13,5 +13,9 @@ export const setAuthToken = (token) => {
 };
 export const followUser = (id) => api.post(`/users/${id}/follow`);
 export const unfollowUser = (id) => api.post(`/users/${id}/unfollow`);
+const api = axios.create({
+  baseURL: "https://textspace-backend.onrender.com/api",
+});
+
 
 export default api;
