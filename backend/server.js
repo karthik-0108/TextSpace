@@ -65,14 +65,13 @@ io.on("connection", (socket) => {
   });
 });
 
-// --- MOUNT API ROUTES ---
+// --- API ROUTES ---
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/messages", messageRoutes);
 
-
-// --- START SERVER AFTER DB CONNECT ---
+// --- START SERVER ---
 const PORT = process.env.PORT || 5000;
 
 mongoose
