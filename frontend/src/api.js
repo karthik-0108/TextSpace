@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://textspace-backend.onrender.com/api",
+  baseURL: "https://textspace-3.onrender.com/api",
 });
 
 
